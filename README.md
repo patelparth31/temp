@@ -37,22 +37,32 @@ The Project will follow a standard machine learning pipeline, encompassing the f
 
 ## Model Evaluation Metric:
 
-Parameter     | Analysis            |
---------------|---------------------|
-Para 1        | Accepted            |
-Para 2        | In Progress         |
+Model         | Accuracy      | F1_Score | Comments | 
+--------------|---------------|----------|----------|
+K-Mean        | 74%      | 15%         | K-Means shows moderate accuracy and a relatively higher F1 score, indicating a decent balance between precision and recall. |
+COPOD Anamoly Detection        | 76%   | 13% | Copod performs slightly better than K-Means in terms of accuracy but exhibits a lower F1 score, suggesting potential challenges in correctly identifying positive instances. |
+logistic Regression | 87% | 6% | Logistic Regression demonstrates high accuracy but a notably low F1 score. This suggests a potential imbalance in class distribution or challenges in capturing true positive instances. | 
+LightGBM Classifier | 88% | 5% | While LightGBM achieves high accuracy, the extremely low F1 score raises concerns about its ability to effectively identify positive cases. Further tuning may be required to enhance performance. |
+XGB CLassifier      | 76% | 45% | XGBoost shows a balanced performance with good accuracy and a high F1 score, indicating effective precision and recall. This model appears promising for the task. |
+Random Forest       | 88% | 0% | Despite high accuracy, the F1 score being zero suggests that Random Forest might struggle to identify positive instances. Further investigation and parameter tuning are recommended. |
+Keras Sequential Model | 68% | 42% | Keras Sequential exhibits relatively lower accuracy but a higher F1 score. This suggests that while it may not predict all instances accurately, it performs well in correctly identifying positive cases. |
 
+> For a balanced approach, XGBoost seems to offer a good trade-off between accuracy and F1 score. However, further refinement and fine-tuning are crucial to enhance the model's performance and reliability in predicting customers interested in vehicle insurance.
+ 
 ## Dependencies:
 
-* adasdasd
-* asdsad
-* asdsadsd
+* Python 3.6+
+* ML Libraries: scikit-learn, tensorflow, numpy and pandas
 
-- kmean
-- logistic
-- LightGBM
+## Run the Notebook:
 
-<code> for i in look: </code>
+1. Clone the Repository:
+<code> git clone https://github.com/your-username/Insurance-Cross-Sell-Prediction.git
+cd Insurance-Cross-Sell-Prediction </code>
 
-> [!NOTE]
-> Highlights information that users should take into account, even when skimming.
+2. Install Dependencies:
+<code> pip install -r requirements.txt </code>
+
+3. Run the python/ jupyter notebook file:
+<code> Run insurance_predictive.py </code>
+
