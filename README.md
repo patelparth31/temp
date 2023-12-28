@@ -1,4 +1,4 @@
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.]()
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](Code_Canvas.png)
 
 # Health Insurance Cross-Sell Prediction 
 
