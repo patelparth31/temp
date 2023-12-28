@@ -1,4 +1,4 @@
-<img src="Code_Canvas_2.png" width="200" height="200" align='center'>
+<img src="Code_Canvas_2.png" width="300" height="200" align='center'>
 
 # Health Insurance Cross-Sell Prediction 
 
